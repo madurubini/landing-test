@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-V05M8W35K9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-V05M8W35K9");
+    </script>
+    <script>
+      window.pg = window.pg || {};
+      pg.disabledUnits = pg.disabledUnits || [];
+      pg.disabledUnits.push("/22852837601/pg_interstitial_reflexioness.com");
+    </script>
+    <script src="//m2d.m2.ai/pg.reflexioness.js" async></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paso1 Recibe $1,400 Dolares En Ayudas</title>
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-class">
+        <div class="loader"></div>
+        <p id="preloader-text">
+          CARGANDO CONTENIDO
+        </p>
+      </div>
+    </div>
+    <div class="container" id="content">
+      <header>
+        <h1 id="title">Cupon de $1,400 Usd</h1>
+      </header>
+      <div class="box-texto">
+        <p id="first-text-page-one">
+          Bienvenidos a nuestro sitio web de ayuda alimentaria y cupones de $870
+          dolares. Sí necesita ayuda pra usted o su familia, nuestro programa es
+          100% gratuito y no solicitamos informacion delicada ni pagos.......
+        </p>
+        <center>
+          <p style="background-color: red; color: white; font-weight: bold">
+            Responda las Preguntas en el cuadro de abajo para Empezar
+          </p>
+        </center>
+        <br />
+      </div>
+      <div class="box-image">
+        <p>Anuncio</p>
+        <br />
+        <div id="reflexioness_mob_top"></div>
+      </div>
+      <br />
+
+      <div class="form">
+        <center>
+          <h3>
+            <p
+              style="
+                background-color: red;
+                color: white;
+                font-weight: bold;
+                font-size: 130%;
+              "
+            >
+              Sigue la guia de abajo
+            </p>
+          </h3>
+        </center>
+        <br />
+
+        <h3>Despues de los 10 segundos</h3>
+        <p>Selecione Su Respuesta y dale a siguiente</p>
+        <p>Responda para enviar la Solitud de ayuda</p>
+
+        <h3>Pregunta #<span id="number"></span> de 3</h3>
+
+        <p id="quest"></p>
+
+        <button
+          id="first-option"
+          onclick="selectOption('first-option')"
+        ></button>
+        <button
+          id="second-option"
+          onclick="selectOption('second-option')"
+        ></button>
+        <button
+          id="third-option"
+          onclick="selectOption('third-option')"
+        ></button>
+
+        <a
+          class="button-seguiente disabled"
+          id="meuBotao"
+          href="../aplicando/beneficios-snap.html?utm_source=Facebook&utm_medium=CPC&utm_campaign=Ayuda%20Alimentaria%20Calfresh"
+          ><div>seguiente pregunta</div></a
+        >
+      </div>
+      <!--<div class="box-image">-->
+      <!--  <p>Anuncio</p>-->
+      <!--  <img src="https://picsum.photos/200" alt="Imagem" />-->
+      <!--</div>-->
+      <br />
+      <p>
+        El programa CalFresh está destinado a ayudar a las personas y familias
+        que enfrentan dificultades económicas y luchan por acceder a alimentos
+        suficientes y saludables. Los requisitos de elegibilidad se basan
+        principalmente en los ingresos y el tamaño del hogar.
+      </p>
+
+      <br />
+
+      <p>
+        El objetivo principal de CalFresh es garantizar que las personas tengan
+        acceso adecuado a una nutrición adecuada y ayudar a reducir la
+        inseguridad alimentaria en California.
+      </p>
+      <footer>
+        <p>&copy; Gnews2023 Portal</p>
+      </footer>
+    </div>
+    <script src="./scripts/counter.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        iniciarContagemRegressiva();
+      });
+    </script>
+    <script src="./texts.js" type="module"></script>
+    <script type="module">
+      import {
+        firstText,
+        title,
+        questFirstPage,
+        optionsFirstPage,
+        numberFirstPage,
+      } from "./texts.js";
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const header = document.getElementById("title");
+        header.textContent = title;
+        const firstParagraph = document.getElementById("first-text-page-one");
+        firstParagraph.textContent = firstText;
+        const numberQuest = document.getElementById("number");
+        numberQuest.textContent = numberFirstPage;
+        const quest = document.getElementById("quest");
+        quest.textContent = questFirstPage;
+        const firstOption = document.getElementById("first-option");
+        firstOption.textContent = optionsFirstPage[0];
+        const secondOption = document.getElementById("second-option");
+        secondOption.textContent = optionsFirstPage[1];
+        const thirdOption = document.getElementById("third-option");
+        thirdOption.textContent = optionsFirstPage[2];
+      });
+    </script>
+  </body>
+</html>

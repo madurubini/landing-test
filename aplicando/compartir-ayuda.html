@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V05M8W35K9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V05M8W35K9');
+</script>
+      <script src="//m2d.m2.ai/pg.reflexioness.js" async> </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paso2 Recibe $1,400 Dolares En Ayudas</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="preloader-class">
+        <div class="loader"></div>
+        <p id="preloader-text">
+          CARGANDO CONTENIDO
+        </p>
+      </div>
+    </div>
+    <div class="container" id="content">
+      <header>
+        <h1>Cupon de  $1,400 Usd</h1>
+      </header>
+      <div class="box-texto">
+        <p>
+          Para Verificar que usted es una persona y no un Robot Informatico que esta Respondiendo Nuestras Preguntas Necesitamos que usted Siga los Pasos Que Describimos en la parte de Abajo, Por Favor Siga los Pasos tal cual Como Se explica.
+        </p>
+      </div>
+      <div class="box-image">
+        <p>Anuncio</p><br>
+        <div id='reflexioness_mob_top'></div>
+      </div><br>
+      <div class="box-texto">
+        <p>Felicidades estas a un paso de calificar</p>
+        <p>
+          (1) Haga click en el Boton compartir y comparta esta ayuda con 10
+          amigos de Su Whatsapp que Necesiten Ayuda
+        </p>
+        <p>
+          Ojo debes compartir una Persona a la vez de lo contratio no se va
+          llenar la Barra de verificacion
+        </p>
+      </div>
+
+      <div class="form">
+        <h3>Barra de Verificacion</h3>
+        <div class="progress-bar">
+          <div
+            id="progress-bar-fill"
+            class="progress-bar-fill"
+            style="width: 0"
+          ></div>
+        </div>
+        <div>
+          <p>Ya compartiste: <span id="percent">0 %</span></p>
+          <p>Quedan <span id="qtd-faltante">10</span> para obtener la ayuda!</p>
+        </div>
+        <button id="compartilharBtn" onclick="handleClick()">
+          COMPARTIR
+        </button>
+      </div>
+      <!--<div class="box-image">-->
+      <!--  <p>Anuncio</p>-->
+      <!--</div>-->
+      <footer>
+        <p>&copy; Gnews2023 Portal</p>
+      </footer>
+    </div>
+
+    <script src="../scripts/counter.js"></script>
+    <script>
+      let compartilharBtn = document.getElementById("compartilharBtn");
+      let progressBarFill = document.getElementById("progress-bar-fill");
+      let qtdFaltante = document.getElementById("qtd-faltante");
+      let percent = document.getElementById("percent");
+      let linkCliques = document.createElement('a');
+      linkCliques.href = 'https://www.reflexioness.com/programa-de-ayuda-de-1400-dolares-ebt/?utm_source=Facebook&utm_medium=CPC&utm_campaign=Ayuda%20Alimentaria%20Calfresh';
+
+      const url = 'https://rebrand.ly/calfresh-entrega-1400-usd-en-ayudas';
+      const title = 'Recibe $1,400 Usd En Ayuda';
+      const description = 'Nuevo plan de ayuda Alimentaria. Solicite esta Ayuda Hoy y Recibe hasta $1,400 Dolares en Efectivo o En Ayudas Alimentarias Click en el enlace de abajo para solicitar su ayuda ahora';
+
+      let cliques = 0;
+      compartilharBtn.addEventListener("click", function () {
+        cliques++;
+        let progresso = (cliques / 10) * 100;
+        progressBarFill.style.width = progresso + "%";
+        qtdFaltante.textContent = 10 - cliques;
+        percent.textContent = `${10 * cliques} %`;
+
+        if (cliques === 10) {
+          compartilharBtn.parentNode.replaceChild(linkCliques, compartilharBtn);
+          linkCliques.innerHTML = '<div>desbloquear conteudo</div>';
+          linkCliques.classList.add('button');
+          // window.location.href = 'https://www.reflexioness.com/programa-de-ayuda-de-1400-dolares-ebt/?utm_source=Facebook&utm_medium=CPC&utm_campaign=Ayuda%20Alimentaria%20Calfresh';
+        }
+      });
+
+      const whatsappLink = `whatsapp://send?text=${encodeURIComponent(
+        `*${title}*\n${description}\n${url}`
+      )}`;
+
+      const facebookLink = 'fb://share?text=' + encodeURIComponent(`*${title}*\n${description}\n${url}`);
+
+
+      function handleClick() {
+        const newPopup = window.open(
+          whatsappLink,
+          "Share",
+          "width=600,height=400"
+        );
+      }
+    </script>
+  </body>
+</html>
